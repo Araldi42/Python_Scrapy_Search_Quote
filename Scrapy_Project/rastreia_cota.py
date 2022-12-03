@@ -3,7 +3,6 @@ import pandas as pd
 import time
 import subprocess
 from datetime import datetime
-from PyQt6.QtWidgets import QMessageBox
 
 
 while True:
@@ -46,7 +45,7 @@ df = pd.read_json('cota_val.json')
 df['cotacao'] = df['cotacao'][0][:-2]
 
 
-#print(pl.wait())
+
 print('estou aqui')
 
 time.sleep(3)
@@ -118,7 +117,7 @@ if int(current_time[:-6]) <= 18:
                 else:
                     
                     import sys
-                    # from PyQt6.QtWidgets import QMessageBox, QApplication
+                  
                     import pyautogui
 
                     print('COTAÇÃO ENCONTRADA \nCOTAÇÃO ENCONTRADA \n COTAÇÃO ENCONTRADA \n COTAÇÃO ENCONTRADA \n COTAÇÃO ENCONTRADA \n COTAÇÃO ENCONTRADA')
@@ -131,18 +130,7 @@ if int(current_time[:-6]) <= 18:
                     
                     
 
-                    # App = QApplication(sys.argv)
-
-                    # msg = QMessageBox()
-
-                    # msg.setIcon(QMessageBox.critical)
-
-                    # msg.setWindowTitle("COTAÇÃO ENCONTRADA!!")
-                    # msg.setText("COTAÇÃO "+{cota_val}+ " ENCONTRADA!!")
                    
-                    # msg.show() 
-
-                    # sys.exit(App.exec())
 
                     
 
@@ -162,15 +150,7 @@ if int(current_time[:-6]) <= 18:
 
 
 
-# if pl.returncode == 0:
 
-#     print('path executado')
-
-#     pass
-
-# else:
-
-#     print('comando falhou')
 
 
 #print(cmd)
