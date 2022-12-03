@@ -46,12 +46,12 @@ df['cotacao'] = df['cotacao'][0][:-2]
 
 
 
-print('estou aqui')
+
 
 time.sleep(3)
 if int(current_time[:-6]) <= 18:
 
-    print('agora aqui')
+    
 
     command ='scrapy crawl busca_cota -O cota_val.json'
     pl = subprocess.Popen(command, shell=True,stdout= subprocess.DEVNULL, stderr= subprocess.DEVNULL)
