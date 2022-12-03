@@ -152,15 +152,3 @@ if int(current_time[:-6]) <= 18:
 
 
 
-
-#print(cmd)
-
-
-
-
-
-
-
-
-#float(input("Insira o valor de sua Cota: ").split()
-
